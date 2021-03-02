@@ -10,7 +10,8 @@ import * as fragment from "!raw-loader!glslify-loader!./shader/fragment.glsl";
 import * as vertex from "!raw-loader!glslify-loader!./shader/vertex.glsl";
 
 
-import water from "../../../../assets/img/water.jpeg";
+
+import water from "../../assets/img/water.jpeg";
 const Threejs = () => {
   React.useEffect(() => {
     ThreejsStart();
