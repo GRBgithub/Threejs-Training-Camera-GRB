@@ -6,16 +6,13 @@ import reportWebVitals from "./reportWebVitals";
 
 import Router from "./layouts/Router";
 import { ContextContainer } from "./context";
-import { Provider } from "react-redux";
-import { store } from "./Store/store";
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
       <ContextContainer>
         <Router />
       </ContextContainer>
-    </Provider>
   </React.StrictMode>,
   document.getElementById("root")
 );
