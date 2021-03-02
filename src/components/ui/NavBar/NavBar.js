@@ -6,14 +6,6 @@ import { helpers } from "../../../utils";
 const NavBar = ({ routes,location }) => {
   return (
     <NavContainer>
-      <motion.div
-        className="Logo"
-        variants={variant}
-        initial="Logoinitial"
-        animate="Logoshow"
-      >
-        <span>Animalib</span>
-      </motion.div>
       <ul>
         {routes.map((route, index) => (
           <NavLink route={route} index={index} location={location} key={helpers.generateKey("NavLink"+index)}></NavLink>
@@ -63,23 +55,7 @@ const NavContainer = styled.div`
     bottom: 0;
     height: 7%;
   }
-  & .Logo {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin-left: 10px;
-    height: 100%;
-    & span {
-      display: none;
-      @media (max-width: ${(props) => props.theme.breakpoints.lg}) {
-        display: block;
-        color: ${(props) => props.theme.colors.third};
-      }
-    }
-    & img {
-      height: 100%;
-    }
-  }
+ 
   & ul {
     margin-right: 10%;
     display: flex;
