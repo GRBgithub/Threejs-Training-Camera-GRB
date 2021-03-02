@@ -1,1 +1,1 @@
-# Threejs-Starter-GRB
+# Threejs-Training-Camera-GRB
